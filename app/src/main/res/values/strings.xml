@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">admissionmeli</string>
+
+    <!-- item -->
+    <string name="item">Item</string>
+    <string name="buy_now">Comprar Ahora</string>
+    <string name="description">Descripción</string>
+    <string name="new_product">Nuevo</string>
+    <string name="used_product">Usado</string>
+    <string name="sold_by">%1$s | %2$d vendido</string>
+    <string name="add_to_cart">Agregar al carrito</string>
+    <string name="item_load_failed">Ha ocurrido un error mientras cargaba el item</string>
+
+    <!-- search -->
+    <string name="back">Back</string>
+    <string name="search">Buscar</string>
+    <string name="clear_search_text">Limpiar busqueda</string>
+    
+    <string name="lookup_search_hint">Search</string>
+    <string name="looking_for">Que deseas compar hoy?</string>
+    <string name="something_went_wrong">"Algo salió mal "</string>
+    <string name="available_quantity">Disponible %1$d</string>
+
+    <!-- http codes -->
+    <string name="unknown_host_exception">Sin conexión a internet. Por favor, verifica tu conexión a internet e intenta nuevamente.</string>
+    <string name="io_exception">Error de red. Ocurrió un error al comunicarse con el servidor. Por favor, verifica tu conexión a internet e intenta nuevamente.</string>
+    <string name="socket_timeout_exception">" Error de red: La conexión expiró. Por favor, verifica tu conexión a internet e intenta nuevamente."</string>
+    <string name="service_unavailable_error_message">Servicio no disponible: El servidor actualmente no puede manejar la solicitud. Por favor, intenta nuevamente más tarde.</string>
+    <string name="internal_server_error_message">" Error interno del servidor: El servidor encontró una condición inesperada que le impidió cumplir con la solicitud."</string>
+    <string name="not_found_error_message">No encontrado: El recurso solicitado no pudo ser encontrado en el servidor.</string>
+    <string name="invalid_request_error_message">Solicitud inválida: El servidor no pudo entender la solicitud debido a una sintaxis inválida o parámetros faltantes.</string>
+    <string name="unauthorized_error_message">" No autorizado: El acceso al recurso solicitado requiere autenticación o autorización."</string>
+    <string name="unknown_error">Ocurrió un error desconocido.</string>
 </resources>
