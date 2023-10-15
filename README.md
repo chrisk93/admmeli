@@ -14,6 +14,6 @@ git clone https://github.com/chrisk93/admmeli.git
 ```
 
 ## Screenshots
-
+[<img src="assets/screenshot.png" width="250" height="500"/>](assets/video.mp4)
 
 
