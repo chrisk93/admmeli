@@ -29,6 +29,8 @@ pagingCompose = "1.0.0-alpha18"
 mockk = "1.12.4"
 mockWebServer = "4.10.0"
 assertk = "0.26.1"
+jupiter = "5.8.1"
+turbine = "0.12.1"
 
 [libraries]
 android-tools-build-gradle-plugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
@@ -87,6 +89,8 @@ androidx-compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-mani
 androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4", version.ref = "compose" }
 mockwebserver = { group = "com.squareup.okhttp3", name = "mockwebserver", version.ref = "mockWebServer" }
 paging-compose = { group = "androidx.paging", name = "paging-compose", version = "3.2.1" }
+jupiter-junit = { module = "org.junit.jupiter:junit-jupiter", version.ref = "jupiter" }
+turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
