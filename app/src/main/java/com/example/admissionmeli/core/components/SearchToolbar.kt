@@ -142,7 +142,7 @@ private fun SearchTextField(
                 }
             }
             .testTag("searchTextField"),
-        shape = RoundedCornerShape(32.dp),
+        shape = RoundedCornerShape(20.dp),
         value = searchQuery,
         keyboardOptions = KeyboardOptions(
             imeAction = ImeAction.Search,
