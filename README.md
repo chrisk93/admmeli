@@ -1,7 +1,7 @@
-# Mercadolibre - Android App
+# Mercadolibre - Android APP
 
 Esta es una aplicación en Android que muestra la lista de los productos con el detalle del item 
-seleccionado. Esta hecha en lenguaje Kotlin y Jetpack compose 
+seleccionado. Esta desarrollada en lenguaje Kotlin y Jetpack compose 
 
 - Buscador de productos
 - Muestra lista de los items encontrados
@@ -14,4 +14,6 @@ git clone https://github.com/chrisk93/admmeli.git
 ```
 
 ## Screenshots
+
+
 
