@@ -14,7 +14,8 @@ git clone https://github.com/chrisk93/admmeli.git
 ```
 
 ## Screenshots
-![screenshot](https://github.com/chrisk93/admmeli/assets/35810477/187ed9e5-58ac-474e-ba9a-db00d736e4d5)
+
+![screenshot1](https://github.com/chrisk93/admmeli/assets/35810477/e3265dab-512a-4e06-a511-ab992d69d80a)
 
 
 
