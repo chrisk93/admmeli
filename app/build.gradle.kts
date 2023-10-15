@@ -77,7 +77,14 @@ dependencies {
     // Dagger Hilt
     implementation(libs.hilt.android)
     implementation(libs.paging.compose)
+    testImplementation(libs.jupiter.junit)
     kapt(libs.hilt.compiler)
+
+    //retrofit
+    implementation(libs.okhttp)
+    implementation(libs.okhttp.logging.interceptor)
+    implementation(libs.retrofit)
+    implementation(libs.converter.moshi)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
@@ -87,9 +94,10 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 
-    //retrofit
-    implementation(libs.okhttp)
-    implementation(libs.okhttp.logging.interceptor)
-    implementation(libs.retrofit)
-    implementation(libs.converter.moshi)
+    testImplementation(libs.kotlinx.coroutines.test)
+    androidTestImplementation(libs.androidx.test.ext.junit)
+    testImplementation(libs.mockk)
+    androidTestImplementation(libs.mockk)
+    testImplementation(libs.turbine)
+    androidTestImplementation(libs.turbine)
 }
