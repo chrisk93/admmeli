@@ -3,27 +3,31 @@ package com.example.admissionmeli
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.rememberNavController
+import com.example.admissionmeli.core.navigation.Screens
+import com.example.admissionmeli.navigation.AppNavGraph
 import com.example.admissionmeli.ui.theme.AdmissionmeliTheme
+import com.example.admissionmeli.ui.theme.statusBarColor
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             AdmissionmeliTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
-                }
+                val systemUiController = rememberSystemUiController()
+                systemUiController.setStatusBarColor(color = MaterialTheme.colorScheme.statusBarColor)
+
+                val navController = rememberNavController()
+                AppNavGraph(
+                    startDestination = Screens.Search.route,
+                    navController = navController
+                )
             }
         }
     }
