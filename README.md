@@ -18,6 +18,14 @@ git clone https://github.com/chrisk93/admmeli.git
 ![screenshot1](https://github.com/chrisk93/admmeli/assets/35810477/e3265dab-512a-4e06-a511-ab992d69d80a)
 
 
+## Librerias usadas
+
+- AndroidX
+- Retrofit
+- Coil
+- Navigation
+- Jetpack compose
+
 
 
 
