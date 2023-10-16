@@ -9,7 +9,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavType
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-import com.example.admissionmeli.core.navigation.Screens
+import com.example.admissionmeli.navigation.Screens
 import com.example.admissionmeli.feature.item.ItemDetailScreen
 import com.example.admissionmeli.feature.item.ItemDetailViewModel
 import com.example.admissionmeli.dto.ItemDetail

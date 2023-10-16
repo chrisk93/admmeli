@@ -1,4 +1,4 @@
-package com.example.admissionmeli.core.navigation
+package com.example.admissionmeli.navigation
 
 sealed class Screens(val route: String) {
     object Search : Screens(route = "search_screen")

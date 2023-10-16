@@ -6,7 +6,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import androidx.paging.compose.collectAsLazyPagingItems
-import com.example.admissionmeli.core.navigation.Screens
+import com.example.admissionmeli.navigation.Screens
 import com.example.admissionmeli.dto.Product
 import com.example.admissionmeli.feature.search.SearchScreen
 import com.example.admissionmeli.feature.search.SearchViewModel

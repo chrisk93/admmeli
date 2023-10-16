@@ -2,7 +2,7 @@ package com.example.admissionmeli.feature.item
 
 import androidx.lifecycle.SavedStateHandle
 import app.cash.turbine.test
-import com.example.admissionmeli.core.navigation.Screens
+import com.example.admissionmeli.navigation.Screens
 import com.example.admissionmeli.domain.GetItemDescriptionUseCase
 import com.example.admissionmeli.dto.ItemDetail
 import com.example.admissionmeli.dto.ProductDescription

@@ -3,7 +3,6 @@ package com.example.admissionmeli.navigation
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.NavHostController
-import com.example.admissionmeli.core.navigation.Screens
 import com.example.admissionmeli.feature.item.navigation.itemDetailNavigation
 import com.example.admissionmeli.feature.search.navigation.searchNavigation
 import com.example.admissionmeli.dto.toParcelable

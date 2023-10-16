@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.admissionmeli.R
 import com.example.admissionmeli.domain.GetItemDescriptionUseCase
-import com.example.admissionmeli.core.navigation.Screens
+import com.example.admissionmeli.navigation.Screens
 import com.example.admissionmeli.core.network.getErrorMessage
 import com.example.admissionmeli.core.utils.UiText
 import com.example.admissionmeli.dto.ItemDetail
