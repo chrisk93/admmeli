@@ -14,7 +14,9 @@ import com.example.admissionmeli.navigation.AppNavGraph
 import com.example.admissionmeli.ui.theme.AdmissionmeliTheme
 import com.example.admissionmeli.ui.theme.statusBarColor
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
