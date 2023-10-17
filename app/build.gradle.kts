@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
     id("kotlin-parcelize")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -69,6 +70,7 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.hilt.navigation.compose)
+    implementation(libs.paging.compose)
 
     //coil
     implementation(libs.coil)
@@ -76,8 +78,6 @@ dependencies {
 
     // Dagger Hilt
     implementation(libs.hilt.android)
-    implementation(libs.paging.compose)
-    testImplementation(libs.jupiter.junit)
     kapt(libs.hilt.compiler)
 
     //retrofit
@@ -100,4 +100,5 @@ dependencies {
     androidTestImplementation(libs.mockk)
     testImplementation(libs.turbine)
     androidTestImplementation(libs.turbine)
+    testImplementation(libs.jupiter.junit)
 }
