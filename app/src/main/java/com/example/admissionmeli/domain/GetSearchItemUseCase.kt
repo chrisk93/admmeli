@@ -1,9 +1,8 @@
 package com.example.admissionmeli.domain
 
 import com.example.admissionmeli.data.SearchRepository
-import com.example.admissionmeli.data.SearchRepositoryImpl
+import javax.inject.Inject
 
-class GetSearchItemUseCase() {
-    private val searchRepository: SearchRepository by lazy { SearchRepositoryImpl() }
+class GetSearchItemUseCase @Inject constructor(private val searchRepository: SearchRepository) {
     operator fun invoke(query: String) = searchRepository.getSearchPaging(query)
 }

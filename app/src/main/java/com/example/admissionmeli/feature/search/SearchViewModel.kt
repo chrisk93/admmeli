@@ -7,17 +7,20 @@ import androidx.paging.PagingData
 import androidx.paging.cachedIn
 import com.example.admissionmeli.domain.GetSearchItemUseCase
 import com.example.admissionmeli.dto.Product
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.update
+import javax.inject.Inject
 
-class SearchViewModel: ViewModel() {
+@HiltViewModel
+class SearchViewModel @Inject constructor(private val getSearchItemUseCase: GetSearchItemUseCase
+) : ViewModel() {
     var searchQuery = mutableStateOf("")
         private set
 
-    val getSearchItemUseCase: GetSearchItemUseCase by lazy { GetSearchItemUseCase() }
     private var _uiState = MutableStateFlow<SearchResultUiState>(SearchResultUiState.EmptyValue)
     val uiState: StateFlow<SearchResultUiState> = _uiState.asStateFlow()
 

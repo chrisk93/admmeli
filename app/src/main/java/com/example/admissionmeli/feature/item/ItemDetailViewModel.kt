@@ -10,17 +10,19 @@ import com.example.admissionmeli.core.network.getErrorMessage
 import com.example.admissionmeli.core.utils.UiText
 import com.example.admissionmeli.dto.ItemDetail
 import com.example.admissionmeli.dto.ProductDetail
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class ItemDetailViewModel (
+@HiltViewModel
+class ItemDetailViewModel @Inject constructor(
+    private val getItemDescriptionUseCase: GetItemDescriptionUseCase,
     savedStateHandle: SavedStateHandle,
 ) : ViewModel() {
-
-    private val getItemDescriptionUseCase: GetItemDescriptionUseCase by lazy { GetItemDescriptionUseCase() }
     private var productDetail = MutableStateFlow<ProductDetail?>(null)
 
     private var _uiState = MutableStateFlow<ItemDetailUiState>(ItemDetailUiState.Loading)

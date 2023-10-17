@@ -1,10 +1,9 @@
 package com.example.admissionmeli.domain
 
-import com.example.admissionmeli.data.ItemRepositoryImpl
+import com.example.admissionmeli.data.ItemRepository
+import javax.inject.Inject
 
-class GetItemDescriptionUseCase () {
-    private val itemRepository by lazy { ItemRepositoryImpl() }
-
+class GetItemDescriptionUseCase  @Inject constructor(private val itemRepository: ItemRepository) {
     suspend operator fun invoke(productId: String) =
         itemRepository.getProductDescription(productId)
 }

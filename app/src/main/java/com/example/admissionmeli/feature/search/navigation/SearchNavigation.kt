@@ -2,6 +2,7 @@ package com.example.admissionmeli.feature.search.navigation
 
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
@@ -16,7 +17,7 @@ fun NavGraphBuilder.searchNavigation(
 ) {
     composable(route = Screens.Search.route) {
 
-        val searchViewModel: SearchViewModel = viewModel()
+        val searchViewModel: SearchViewModel = hiltViewModel()
         val searchQuery by searchViewModel.searchQuery
         val uiState by searchViewModel.uiState.collectAsState()
 

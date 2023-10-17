@@ -3,6 +3,7 @@ package com.example.admissionmeli.feature.item.navigation
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
@@ -32,7 +33,7 @@ fun NavGraphBuilder.itemDetailNavigation(
         val itemDetail = navController.previousBackStackEntry?.savedStateHandle?.get<ItemDetail>(
             Screens.Detail.ITEM_DETAIL_KEY
         )
-        val viewModel: ItemDetailViewModel = viewModel()
+        val viewModel: ItemDetailViewModel = hiltViewModel()
         val uiState by viewModel.uiState.collectAsState()
 
         LaunchedEffect(key1 = itemDetail) {
