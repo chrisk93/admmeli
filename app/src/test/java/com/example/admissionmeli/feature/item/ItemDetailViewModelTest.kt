@@ -40,13 +40,12 @@ class ItemDetailViewModelTest {
         coEvery { getItemDescriptionUseCase.invoke(any()) } returns Result.success(
             ProductDescription(description = "desc")
         )
-        viewModel = spyk(ItemDetailViewModel(savedStateHandle))
-        every { viewModel.getProperty("getItemDescriptionUseCase") } returns getItemDescriptionUseCase
+        viewModel = spyk(ItemDetailViewModel(getItemDescriptionUseCase, savedStateHandle))
     }
 
     @Test
     fun `test initial state in screen with empty keyHandle`() = runBlocking {
-        viewModel = ItemDetailViewModel(mockk())
+        viewModel = ItemDetailViewModel(getItemDescriptionUseCase, mockk())
         viewModel.uiState.test {
             val state = awaitItem()
             Assert.assertTrue(state is ItemDetailUiState.LoadFailed)

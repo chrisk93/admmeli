@@ -1,6 +1,8 @@
 package com.example.admissionmeli.feature.search
 
 import app.cash.turbine.test
+import com.example.admissionmeli.domain.GetSearchItemUseCase
+import io.mockk.mockk
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert
 import org.junit.Before
@@ -12,7 +14,8 @@ class SearchViewModelTest {
     lateinit var searchViewModel: SearchViewModel
     @Before
     fun setUp() {
-        searchViewModel = SearchViewModel()
+        val getSearchItemUseCase: GetSearchItemUseCase = mockk(relaxed = true)
+        searchViewModel = SearchViewModel(getSearchItemUseCase)
     }
 
     @Test
