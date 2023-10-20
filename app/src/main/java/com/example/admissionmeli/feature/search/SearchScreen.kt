@@ -31,7 +31,7 @@ import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.example.admissionmeli.R
 import com.example.admissionmeli.core.utils.toLocalCurrency
-import com.example.admissionmeli.core.components.SearchToolbar
+import com.example.admissionmeli.core.ui.components.SearchToolbar
 import com.example.admissionmeli.core.network.getErrorMessage
 import com.example.admissionmeli.core.ui.components.IconText
 import com.example.admissionmeli.dto.Product

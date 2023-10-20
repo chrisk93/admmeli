@@ -1,4 +1,4 @@
-package com.example.admissionmeli.core.components
+package com.example.admissionmeli.core.ui.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Row
