@@ -39,7 +39,7 @@ fun IconText(text:String, image:Int = R.drawable.error) {
         )
         Text(
             text = text,
-            fontSize = 20.sp,
+            fontSize = 16.sp,
             fontWeight = FontWeight.Light,
             color = MaterialTheme.colorScheme.onSurface
         )
