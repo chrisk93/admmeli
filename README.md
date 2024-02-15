@@ -34,19 +34,19 @@ Esta app fue construida usando Clean arquitecture siguiendo las siguientes capas
 
 La organización de la aplicación es basada en el siguiente diagrama 
 
-:app/
-:core/
-├── :network/
-├── :ui/
-└── :utils/
-:data/
-:domain/
-└──  :items_search
-:dto/
-:feature/
-├── :search
-└── :detail
-:navigation/
+    :app/
+    :core/
+    ├── :network/
+    ├── :ui/
+    └── :utils/
+    :data/
+    :domain/
+    └──  :items_search
+    :dto/
+    :feature/
+    ├── :search
+    └── :detail
+    :navigation/
 
 - app: Es el activity de la aplicacion llamado MainActivity
 - core: Contiene el código comun de la aplicación
